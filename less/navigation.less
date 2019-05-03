@@ -1,1 +1,23 @@
 // Navigation code here
+
+nav {
+    @media @mobile {
+        .flex_it();
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: inherit;
+        color: inherit;
+        padding: 2% 5% 2% 5%;
+        li {
+            list-style: none;
+        }
+        &:first-child {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+}
