@@ -91,9 +91,7 @@
             img {
                     display: none;
                     &:first-child {
-                        display: block;
-                        width: 100%;
-                        padding: 0% 2% 0% 2%;
+                        .main_panel_img()
                     }
                 }
         }
@@ -111,25 +109,23 @@
 }
 
 .btn {
+  cursor: pointer;
   @media @mobile {
-    .flex_it();
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    height: 5rem;
-    background-color: @btn-bg-color;
-    color: white;
+    .flex_it("centerCrossAndMain"); //centerCrossAndMain
+    // justify-content: center;
+    // align-items: center;
+    .sign_up();
   }
 
   @media @laptop {
-    .flex_it();
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    height: 5rem;
-    background-color: @btn-bg-color;
-    color: white;
-    max-width: 100px;
+    .flex_it("centerCrossAndMain");
+    // justify-content: center;
+    // align-items: center;
+    .sign_up("laptop");
+  }
+
+  &:hover {
+    .sign_up("swap")
   }
 }
 

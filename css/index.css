@@ -1,6 +1,17 @@
 .flex_it {
   display: flex;
 }
+.sign_up {
+  border-radius: 0.5rem;
+  height: 5rem;
+  background-color: #22283A;
+  color: white;
+}
+.main_panel_img {
+  display: block;
+  width: 100%;
+  padding: 0% 2% 0% 2%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -289,6 +300,9 @@ footer {
     width: 100%;
   }
 }
+.btn {
+  cursor: pointer;
+}
 @media screen and (max-width: 600px) {
   .btn {
     display: flex;
@@ -311,6 +325,12 @@ footer {
     color: white;
     max-width: 100px;
   }
+}
+.btn:hover {
+  border-radius: 0.5rem;
+  height: 5rem;
+  background-color: white;
+  color: #22283A;
 }
 @media screen and (max-width: 600px) {
   .home .walk {
