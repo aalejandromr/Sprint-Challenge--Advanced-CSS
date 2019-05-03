@@ -12,6 +12,11 @@
   width: 100%;
   padding: 0% 2% 0% 2%;
 }
+.fix_nav {
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,6 +185,9 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #F6F6F6;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
   }
   nav a {
     text-decoration: inherit;
@@ -201,6 +209,9 @@ p {
     justify-content: center;
     background-color: #F6F6F6;
     margin: auto;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
   }
   nav a {
     font-size: 1.5em;
@@ -278,8 +289,16 @@ footer {
   border-radius: 10px;
 }
 @media screen and (max-width: 600px) {
+  .container.home {
+    padding-top: 19%;
+  }
   .container.home .intro img {
     width: 100%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .container.home {
+    padding-top: 8%;
   }
 }
 @media screen and (max-width: 600px) {
