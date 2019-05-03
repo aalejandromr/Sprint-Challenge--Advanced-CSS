@@ -169,18 +169,39 @@ p {
     flex-wrap: wrap;
     justify-content: center;
   }
+  nav a {
+    text-decoration: inherit;
+    color: inherit;
+    padding: 2% 5% 2% 5%;
+  }
+  nav a li {
+    list-style: none;
+  }
+  nav a:first-child {
+    width: 100%;
+    text-align: center;
+  }
 }
-nav a {
-  text-decoration: inherit;
-  color: inherit;
-  padding: 2% 5% 2% 5%;
-}
-nav a li {
-  list-style: none;
-}
-nav a:first-child {
-  width: 100%;
-  text-align: center;
+@media (min-width: 1300px) and (max-width: 1500px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6F6F6;
+    margin: auto;
+  }
+  nav a {
+    text-decoration: inherit;
+    color: inherit;
+    padding: 1% 2%;
+  }
+  nav a li {
+    list-style: none;
+  }
+  nav a:first-child {
+    width: 100%;
+    text-align: center;
+  }
 }
 footer {
   color: #22283B;
@@ -243,36 +264,56 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.container.home .intro img {
-  width: 100%;
+@media screen and (max-width: 600px) {
+  .container.home .intro img {
+    width: 100%;
+  }
 }
-.home section.space-images img {
-  display: none;
+@media screen and (max-width: 600px) {
+  .home section.space-images img {
+    display: none;
+  }
+  .home section.space-images img:first-child {
+    display: block;
+    width: 100%;
+    padding: 0% 2% 0% 2%;
+  }
+  .home section.walk {
+    flex-direction: column-reverse;
+  }
+  .home section.walk .walk-img,
+  .home section.walk .walk-text {
+    width: 100%;
+  }
 }
-.home section.space-images img:first-child {
-  display: block;
-  width: 100%;
-  padding: 0% 2% 0% 2%;
+@media screen and (max-width: 600px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 5rem;
+    background-color: #222739;
+    color: white;
+  }
 }
-.home section.walk {
-  flex-direction: column-reverse;
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 5rem;
+    background-color: #222739;
+    color: white;
+    max-width: 100px;
+  }
 }
-.home section.walk .walk-img,
-.home section.walk .walk-text {
-  width: 100%;
-}
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  height: 5rem;
-  background-color: #222739;
-  color: white;
-}
-.home .walk {
-  padding: 15px;
-}
-.home .walk .walk-img {
-  margin-left: unset;
+@media screen and (max-width: 600px) {
+  .home .walk {
+    padding: 15px;
+  }
+  .home .walk .walk-img {
+    margin-left: unset;
+  }
 }

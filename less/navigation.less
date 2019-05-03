@@ -5,19 +5,40 @@ nav {
         .flex_it();
         flex-wrap: wrap;
         justify-content: center;
+        a {
+            text-decoration: inherit;
+            color: inherit;
+            padding: 2% 5% 2% 5%;
+            li {
+                list-style: none;
+            }
+            &:first-child {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 
-    a {
-        text-decoration: inherit;
-        color: inherit;
-        padding: 2% 5% 2% 5%;
-        li {
-            list-style: none;
-        }
-        &:first-child {
-            width: 100%;
-            text-align: center;
+    @media @laptop {
+        .flex_it();
+        flex-wrap: wrap;
+        justify-content: center;
+        // margin: 800px;
+        background-color: #F6F6F6;
+        margin: auto;
+        a {
+            text-decoration: inherit;
+            color: inherit;
+            padding: 1% 2%;
+            li {
+                list-style: none;
+            }
+            &:first-child {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
+
 
 }
