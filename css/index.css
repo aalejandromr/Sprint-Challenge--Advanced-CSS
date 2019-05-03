@@ -168,6 +168,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #F6F6F6;
   }
   nav a {
     text-decoration: inherit;
@@ -182,7 +183,7 @@ p {
     text-align: center;
   }
 }
-@media (min-width: 1300px) and (max-width: 1500px) {
+@media (min-width: 1100px) and (max-width: 1500px) {
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +192,7 @@ p {
     margin: auto;
   }
   nav a {
+    font-size: 1.5em;
     text-decoration: inherit;
     color: inherit;
     padding: 1% 2%;
@@ -283,6 +285,7 @@ footer {
   }
   .home section.walk .walk-img,
   .home section.walk .walk-text {
+    padding-top: 4%;
     width: 100%;
   }
 }
@@ -293,18 +296,18 @@ footer {
     align-items: center;
     border-radius: 0.5rem;
     height: 5rem;
-    background-color: #222739;
+    background-color: #22283A;
     color: white;
   }
 }
-@media (min-width: 1300px) and (max-width: 1500px) {
+@media (min-width: 1100px) and (max-width: 1500px) {
   .btn {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
     height: 5rem;
-    background-color: #222739;
+    background-color: #22283A;
     color: white;
     max-width: 100px;
   }
@@ -315,5 +318,15 @@ footer {
   }
   .home .walk .walk-img {
     margin-left: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1500px) {
+  h1 {
+    font-size: 4rem;
   }
 }

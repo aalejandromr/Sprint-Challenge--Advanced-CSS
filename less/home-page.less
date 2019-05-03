@@ -102,6 +102,7 @@
             flex-direction: column-reverse;
     
             .walk-img, .walk-text {
+                padding-top: 4%;
                 width: 100%;
             }
         }
@@ -116,7 +117,7 @@
     align-items: center;
     border-radius: 0.5rem;
     height: 5rem;
-    background-color: #222739;
+    background-color: @btn-bg-color;
     color: white;
   }
 
@@ -126,7 +127,7 @@
     align-items: center;
     border-radius: 0.5rem;
     height: 5rem;
-    background-color: #222739;
+    background-color: @btn-bg-color;
     color: white;
     max-width: 100px;
   }
@@ -139,5 +140,15 @@
     .walk-img {
       margin-left: unset;
     }
+  }
+}
+
+h1 {
+  @media @mobile {
+    font-size: 3em;
+  }
+
+  @media @laptop {
+    font-size: 4rem;
   }
 }
